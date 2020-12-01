@@ -15,5 +15,5 @@ func main() {
 
 func homeHandler(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
-	fmt.Fprintf(w, "Hello from %s\n", r.URL)
+	fmt.Fprintf(w, "Hello from %s\n", r.Host)
 }
